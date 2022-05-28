@@ -1,0 +1,811 @@
+body {
+    margin: auto;
+    position: absolute;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inicio {
+    height: 100%;
+    position: relative;
+}
+
+.caja-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    background-color: rgba(83, 90, 91, 0.008);
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+.caja-top .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.menu #sesion {
+    background-color: rgb(44, 193, 219);
+    padding: 7px 7px 10px 7px;
+    border-radius: 10px;
+}
+
+.menu ul li a:hover {
+    color: rgb(69, 121, 130);
+    text-decoration: underline 5px;
+}
+
+.menu #sesion:hover {
+    background-color: rgb(44, 193, 219);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cont-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/*---------------------------------------------------------TITULO -------------------------------*/
+
+.tl-main {
+    width: 50%;
+    color: white;
+    align-self: flex-end;
+    margin-right: 8%;
+}
+
+.tl-main h1 {
+    font-size: 40px;
+    text-shadow: rgb(0, 0, 0) 1px 5px 3px;
+    font-family: 'David Libre', serif;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+#tl-principal {
+    font-size: 70px;
+}
+
+
+/*--------------------------------------------------------------------FORMULARIO --------------------------*/
+
+.cont-form {
+    width: 50%;
+    margin-top: 10px;
+}
+
+#formulario {
+    width: 70%;
+    margin: auto;
+    background-color: rgba(6, 30, 50, 0.455);
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: rgb(0, 0, 0) 1px 1px 2px;
+    margin-bottom: 100px;
+}
+
+#tl-form {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-family: 'David Libre', serif;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.txt-form {
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: 'David Libre', serif;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.datos-form {
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#btn-form {
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(25, 27, 29);
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#btn-form:hover {
+    border-color: rgb(69, 121, 130);
+}
+
+
+/*SERVICIOS--------------------------------------*/
+
+.info {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(44, 59, 57, 1) 38%, rgba(255, 255, 255, 1) 100%);
+}
+
+.cont-services {
+    background-color: rgba(21, 17, 17, 0);
+    font-family: 'David Libre', serif;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.tl-ser {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+.cont-services #subtl-ser {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cont-sec {
+    width: 100%;
+    background-color: rgba(255, 228, 196, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*SERVICIO DE ALARMA----------------------------*/
+
+.alarma {
+    width: 30%;
+    background-color: rgba(255, 127, 80, 0);
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    border: 1px solid white;
+    transition: transform .3s;
+}
+
+.alm-img {
+    width: 95%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.alm-foto {
+    width: 100%;
+    height: 250px;
+    background-image: url(../Images/Alarma1.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+
+/*SERVICIO DE CÁMARAS----------------------------*/
+
+.camara {
+    width: 30%;
+    background-color: rgba(255, 127, 80, 0);
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    border: 1px solid white;
+    transition: transform .3s;
+}
+
+.cam-img {
+    width: 95%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.cam-foto {
+    width: 100%;
+    height: 250px;
+    background-image: url(../Images/Camara1.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+
+/*SERVICIO DE ACCESOS----------------------------*/
+
+.acceso {
+    width: 30%;
+    background-color: rgba(63, 59, 57, 0);
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    border: 1px solid white;
+    transition: transform .3s;
+}
+
+.acs-img {
+    width: 95%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.acs-foto {
+    width: 100%;
+    height: 250px;
+    background-image: url(../Images/Acceso1.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.alarma:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(81, 81, 81) 1px 1px 8px;
+}
+
+.camara:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(81, 81, 81) 1px 1px 8px;
+}
+
+.acceso:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(81, 81, 81) 1px 1px 8px;
+}
+
+.txt {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------------PROVEEDORES-----------------------------------*/
+
+.cont-marcas {
+    border-top: 1px solid white;
+    font-family: 'David Libre', serif;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.tl-mrc {
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 70px;
+    color: white;
+    margin-right: 10px;
+}
+
+.cont-marcas #subtl-mrc {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.cont-mrc {
+    width: 100%;
+    background-color: rgba(155, 99, 30, 0);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+/*------------------------------------------------------------------------------------PROVEEDOR HIKVISION----------------------------*/
+
+.hikvision a {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.051);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.cont-sec-mrc {
+    width: 40%;
+    align-self: center;
+}
+
+.hkv-img {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hkv-foto {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.txt-mrc {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hkv-logo {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+.hkv-logo img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.txt-mrc p {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.hikvision:hover a {
+    background-color: rgba(255, 255, 255, 0.127);
+    transition: all .3s ease-in-out;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.981) 1px 1px 10px;
+}
+
+
+/*------------------------------------------------------------------------------------PROVEEDOR DAHUA----------------------------*/
+
+.dahua a {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.051);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.cont-sec-mrc {
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dha-img {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dha-foto {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.txt-mrc {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dha-logo {
+    width: 40%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+.dha-logo img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.txt-mrc p {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.dahua:hover a {
+    background-color: rgba(255, 255, 255, 0.127);
+    transition: all .3s ease-in-out;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.981) 1px 1px 10px;
+}
+
+
+/*------------------------------------------------------------------------------------PROVEEDOR ZKTECO----------------------------*/
+
+.zkt a {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.051);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.cont-sec-mrc {
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.zkt-img {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.zkt-foto {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.txt-mrc {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.zkt-logo {
+    width: 40%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+.zkt-logo img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.txt-mrc p {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.zkt:hover a {
+    background-color: rgba(255, 255, 255, 0.127);
+    transition: all .3s ease-in-out;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.981) 1px 1px 10px;
+}
+
+
+/*--------------------------------------------------------------------------------------SUSCRIPCIÓN---------------------------------*/
+
+.suscripcion {
+    padding-top: 30px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tl-sus {
+    color: rgb(69, 121, 130);
+    font-size: 100px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+}
+
+.suscripcion p {
+    color: rgb(27, 62, 68);
+    font-size: 40px;
+}
+
+.mail-sus {
+    width: 50%;
+    font-size: 40px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn-sus {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 25%;
+    border-radius: 50px;
+    background-color: rgb(44, 193, 219);
+    color: white;
+    height: 70px;
+    border-color: rgb(21, 64, 72);
+}
+
+.btn-sus:hover {
+    background-color: rgb(17, 94, 108);
+}
+
+.foot {
+    background: #111;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 100px;
+    font-style: italic;
+}
+
+.logo-foot {
+    width: 15%;
+    margin: 5px 0px 5px 20px;
+}
+
+.banner-foot {
+    width: 100%;
+}
+
+.footer-content p {
+    width: 60%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a {
+    font-size: 1.1rem;
+    width: 20%;
+    transition: color .4s ease;
+}
+
+.socials li:not(:last-child) {
+    border-right: 1px solid white;
+    padding-right: 10%;
+}
+
+.socials a:hover {
+    color: rgb(44, 193, 219);
+}
+
+@media (max-width: 900px) {
+    /*-----------------NAVBAR - MAIN ---------------*/
+    .logo img {
+        width: 100px;
+        margin-left: 0px;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 3px;
+    }
+    .menu ul li:not(:last-child) {
+        margin-right: 7px;
+    }
+    .menu ul li a {
+        color: white;
+        font-size: 10px;
+    }
+    .menu #sesion {
+        background-color: rgb(44, 193, 219);
+        padding: 7px 5px 10px 5px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    /*-----------------TITULO - MAIN ---------------*/
+    .cont-form {
+        width: 40%;
+    }
+    .tl-main h1 {
+        font-size: 25px;
+    }
+    #tl-principal {
+        font-size: 50px;
+    }
+    /*-----------------FORMULARIO - MAIN ---------------*/
+    .cont-form {
+        width: 60%;
+        margin-top: 50px;
+    }
+    #formulario {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    /*-----------------TITULO - SERVICIOS ---------------*/
+    .tl-ser {
+        font-size: 50px;
+    }
+    .cont-services #subtl-ser {
+        font-size: 20PX;
+    }
+    /*-----------------CONTENIDO - SERVICIOS ---------------*/
+    .cont-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .alarma {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .alm-img {
+        width: 95%;
+    }
+    .camara {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .cam-img {
+        width: 95%;
+    }
+    .acceso {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .zkt-img {
+        width: 95%;
+    }
+    /*-----------------TITULO - PROVEEDORES ---------------*/
+    .tl-mrc {
+        font-size: 50px;
+    }
+    .cont-marcas #subtl-mrc {
+        font-size: 20px;
+    }
+    /*-----------------CONTENIDO - PROVEEDORES ---------------*/
+    .txt-mrc p {
+        font-size: 12px;
+    }
+    /*-----------------------SUSCRIPCION ---------------------*/
+    .tl-sus {
+        font-size: 70px;
+    }
+    .suscripcion p {
+        font-size: 20px;
+    }
+    .mail-sus {
+        width: 80%;
+        font-size: 25px;
+    }
+    .btn-sus {
+        width: 40%;
+    }
+}
+
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+    }
+}
